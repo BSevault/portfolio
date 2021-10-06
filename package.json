@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "Portfolio BTS SIO 2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./public"
+  },
+  "author": "B. Sevault",
+  "license": "ISC"
+}
