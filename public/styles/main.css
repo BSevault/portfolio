@@ -1,6 +1,7 @@
 body
 {
     font-family: Verdana, Tahoma, sans-serif;
+    /* font-size: 50vmax; */
 }
 
 header h1
@@ -13,13 +14,26 @@ header h1
     position: absolute;
     right: 10%;
     width: 80%;
+    height: 900px;
 }
 
-.nav_bar
+.display_panel
+{
+    position: sticky;
+    top: 45px;
+    border: 1px solid black;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 90vh;
+}
+
+ul.nav_bar
 {
     text-align: center;
-    margin: 1px;
+    margin: 1px 1px 10px 1px;
     padding: 1px;
+    position: sticky;
+    top: 10px;
     /* border: 3px solid black; */
 }
 
@@ -27,20 +41,18 @@ header h1
 {
     position: relative;
     display: inline-block;
-    width: 20%;
-    padding: 1% 1%;
+    width: 18%;
+    /* padding: 1% 1%; */
     border: 1px solid black;
     border-radius: 20px;
-    /* background-image: radial-gradient(ellipse farthest-corner at 40%, white, #b8b3b3,grey,black); */
-    /* background: rgb(184,179,179); */
-background: linear-gradient(0deg, #a7a3a3 0%, #ffffff 49%, #747272 100%);
+    background: linear-gradient(0deg, #a7a3a3 0%, #ffffff 49%, #747272 100%);
 }
 
 .nav_button::before
 {
     position: absolute;
     left: 5%;
-    top: 35%;
+    top: 27%;
     display: inline-block;
     background-image: url("../assets/icons/nav/led-blue-black.svg");
     background-repeat: no-repeat;
@@ -63,9 +75,4 @@ background: linear-gradient(0deg, #a7a3a3 0%, #ffffff 49%, #747272 100%);
 .content
 {
     text-align: justify;
-}
-
-.content h2
-{
-    text-align: center;
 }
