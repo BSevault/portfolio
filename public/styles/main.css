@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body
 {
     font-family: Verdana, Tahoma, sans-serif;
@@ -23,11 +27,16 @@ header h1
     top: 45px;
     border: 1px solid black;
     overflow-y: scroll;
-    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     height: 90vh;
 }
 
-ul.nav_bar
+.display_panel::-webkit-scrollbar {
+    display: none;
+  }
+
+.nav_bar
 {
     text-align: center;
     margin: 1px 1px 10px 1px;
@@ -41,7 +50,7 @@ ul.nav_bar
 {
     position: relative;
     display: inline-block;
-    width: 18%;
+    width: 7em;
     /* padding: 1% 1%; */
     border: 1px solid black;
     border-radius: 20px;
@@ -74,5 +83,23 @@ ul.nav_bar
 
 .content
 {
+    display: none;
     text-align: justify;
+    animation: fadeOut 0.5s;
+}
+
+.content:target
+{
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0; word-spacing: 35px;}
+    100% {opacity: 1; word-spacing: normal;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1; word-spacing: normal;}    
+    100% {opacity: 0; word-spacing: 35px;}
 }
