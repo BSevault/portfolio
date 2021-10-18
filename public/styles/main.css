@@ -1,11 +1,8 @@
-html {
-    scroll-behavior: smooth;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
 
-body
-{
-    font-family: Verdana, Tahoma, sans-serif;
-    /* font-size: 50vmax; */
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	margin: 0;
 }
 
 header h1
@@ -13,72 +10,84 @@ header h1
     text-align: center;
 }
 
-.main_display 
-{
-    position: absolute;
+.main_display {
+    /* position: absolute;
     right: 10%;
-    width: 80%;
-    height: 900px;
+    width: 85%; */
+    margin: 2%;
+    /* height: 900px; */
+    /* position: sticky; */
+    /* top: 10px; */
 }
 
-.display_panel
-{
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     position: sticky;
-    top: 45px;
-    border: 1px solid black;
-    overflow-y: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    height: 90vh;
+    top: 0;
+    height: 35px;
+    background-color: #218c74;
+    color: #dddddd;
 }
 
-.display_panel::-webkit-scrollbar {
-    display: none;
-  }
 
-.nav_bar
-{
-    text-align: center;
-    margin: 1px 1px 10px 1px;
-    padding: 1px;
-    position: sticky;
-    top: 10px;
-    /* border: 3px solid black; */
+nav .profile{
+    display: flex;
+    align-items: center;
 }
 
-.nav_button
-{
-    position: relative;
-    display: inline-block;
-    width: 7em;
-    /* padding: 1% 1%; */
-    border: 1px solid black;
-    border-radius: 20px;
-    background: linear-gradient(0deg, #a7a3a3 0%, #ffffff 49%, #747272 100%);
-}
-
-.nav_button::before
-{
-    position: absolute;
-    left: 5%;
-    top: 27%;
-    display: inline-block;
-    background-image: url("../assets/icons/nav/led-blue-black.svg");
-    background-repeat: no-repeat;
-    content: "";
-    width: 10px;
-    height: 10px;
+nav .profile h1{
+    font-size: 20px;
     margin: 0;
-    padding: 0;
-    /* opacity: 0.65; */
-    /* border: 1px solid black; */
-    
 }
 
-.nav_button:hover::before
-{
-    background-image: url("../assets/icons/nav/led-green-black.svg");
-    opacity: 1;
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    height: 100%;
+}
+
+nav li{
+    display: flex;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid black;
+    }
+
+    nav li:last-of-type{
+        border-right: 1px solid black;
+    }
+
+    nav li a{
+        width: 100%;
+        text-align: center;
+    }
+
+nav li a:link{ 
+    text-decoration: none;
+    color: #dddddd;
+}
+
+nav li a:visited{ 
+    /* text-decoration: none; */
+    color:#dddddd;
+}
+
+nav li:hover{
+    background-color: white;
+    /* width: 30%; */
+    transition: 0.4s;
+}
+
+nav li:hover a{
+    font-weight: bolder;
+    font-size: 110%;
+    color : #15574a;
+
 }
 
 .content
