@@ -5,19 +5,20 @@ body {
 	margin: 0;
 }
 
+header{
+    display: none;
+}
+
 header h1
 {
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 
 .main_display {
-    /* position: absolute;
-    right: 10%;
-    width: 85%; */
+    top: 60px;
     margin: 2%;
-    /* height: 900px; */
-    /* position: sticky; */
-    /* top: 10px; */
 }
 
 nav{
@@ -35,6 +36,7 @@ nav{
 nav .profile{
     display: flex;
     align-items: center;
+    font-variant: small-caps;
 }
 
 nav .profile h1{
@@ -94,21 +96,15 @@ nav li:hover a{
 {
     display: none;
     text-align: justify;
-    animation: fadeOut 0.5s;
 }
 
-.content:target
+:target
 {
     display: block;
-    animation: fadeIn 0.5s;
+    animation: 6s fadeIn cubic-bezier(0.075, 0.82, 0.165, 1 );
 }
 
 @keyframes fadeIn{
-    0% {opacity: 0; word-spacing: 35px;}
-    100% {opacity: 1; word-spacing: normal;}
-}
-
-@keyframes fadeOut {
-    0% {opacity: 1; word-spacing: normal;}    
-    100% {opacity: 0; word-spacing: 35px;}
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
