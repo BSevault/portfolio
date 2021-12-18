@@ -1,3 +1,8 @@
+:root {
+    --lBlue: #2094f3;
+    --dBlue: #2063f3;
+    }
+
 @media (max-width:991px) {
     header,
     header.sticky {
@@ -30,28 +35,27 @@
         margin: 10px;
     }
 
-    .toggle {
-        width: 40px;
-        height: 40px;
-        background: url("../assets/icons/menu.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 30px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
-    .toggle.active {
-        background: url("../assets/icons/close.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 25px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
     header.sticky .toggle {
         filter: invert(1);
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+        background-color: var(--dBlue);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+        background-color: var(--dBlue);
     }
 
     section {

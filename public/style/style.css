@@ -23,6 +23,7 @@ section {
 .banner {
     position: relative;
     min-height: 100vh;
+    /* background-image: url("../assets/img/binary_background.jpg"); */
     background-image: url("../assets/img/banner.jpg");
     background-size: cover;
     background-position: right;
@@ -79,7 +80,7 @@ header {
 
 header.sticky {
     background: #fff;
-    padding: 20px 100px;
+    padding: 0 100px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
@@ -139,6 +140,29 @@ header ul li a:focus:after {
   background: var(--dBlue); 
   color: var(--dBlue);
 }
+
+.hamburger {
+    display: none;
+}
+  
+.hamburger .bar:nth-child(2) {
+    background-color: var(--dBlue);
+}
+  
+.bar {
+    display: block;
+    width: 45px;
+    height: 5px;
+    margin: 6px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+header.sticky .bar:nth-child(2n+1) {
+    filter: invert(1);
+}
+  
 
 /* Contenu */
 .heading {

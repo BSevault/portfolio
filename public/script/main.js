@@ -4,7 +4,7 @@ window.addEventListener('scroll', () =>{
 });
 
 function toggleMenu(){
-    let menuToggle = document.querySelector('.toggle');
+    let menuToggle = document.querySelector('.hamburger');
     let menu = document.querySelector('.menu');
     menuToggle.classList.toggle('active');
     menu.classList.toggle('active');
