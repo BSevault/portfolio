@@ -6,8 +6,13 @@
 @media (max-width:991px) {
     header,
     header.sticky {
-        padding: 20px 50px ;
+        padding: 0 50px ;
         z-index: 1000;
+    }
+
+    .logo {
+        font-size: 20px !important;
+        font-weight: 500 !important;
     }
 
     .menu {
@@ -113,7 +118,12 @@
 @media (max-width: 600px){
     header,
     header.sticky {
-        padding: 20px 20px ;
+        padding: 0 20px ;
+    }
+
+    .logo {
+        font-size: 16px !important;
+        font-weight: 500 !important;
     }
 
     .banner {

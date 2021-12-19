@@ -23,8 +23,8 @@ section {
 .banner {
     position: relative;
     min-height: 100vh;
-    /* background-image: url("../assets/img/binary_background.jpg"); */
-    background-image: url("../assets/img/banner.jpg");
+    /* background-image:  url("../assets/img/banner.jpg"); */
+    background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url("../assets/img/banner.jpg");
     background-size: cover;
     background-position: right;
     display: flex;
@@ -160,7 +160,11 @@ header ul li a:focus:after {
 }
 
 header.sticky .bar:nth-child(2n+1) {
-    filter: invert(1);
+    background-color: #000;
+}
+
+header.sticky .hamburger.active .bar:nth-child(2n+1) {
+    background-color: var(--dBlue);
 }
   
 
@@ -197,6 +201,132 @@ header.sticky .bar:nth-child(2n+1) {
 
 img {
     max-width: 100%;
+}
+
+/* Timeline */
+.timeline{
+    display: block;
+    width: 80%;
+    margin: 150px auto;
+    background: #111;
+}
+
+.timeline .heading{
+    margin-bottom: 150px;
+}
+
+.card{
+    width: 45%;
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    margin: -80px 0;
+    position: relative;
+    background: #f00;
+}
+
+.card:nth-child(even){
+    margin-left: auto;
+}
+
+/* Right side big dots */
+.card:nth-child(even):before{
+    content: '';
+    position: absolute;
+    left: -15%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 5px solid #191919;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* Right side dash */
+.card:nth-child(even):after{
+    content: '';
+    position: absolute;
+    left: -8.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7%;
+    height: 2px;
+    background: #fff;
+    z-index: 1;
+}
+
+/* Left side big dot */
+.card:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    right: -13%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 5px solid #191919;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* Left side dash */
+.card:nth-child(odd):after{
+    content: '';
+    position: absolute;
+    right: -8.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7%;
+    height: 2px;
+    background: #fff;
+    z-index: 1;
+}
+
+.card:nth-child(2), .card:nth-child(2):before{
+    background: #ff4f4f;
+}
+.card:nth-child(3), .card:nth-child(3):before{
+    background: #ffb84f;
+}
+.card:nth-child(4), .card:nth-child(4):before{
+    background: #3dca5c;
+}
+.card:nth-child(5), .card:nth-child(5):before{
+    background: #565252;
+}
+.card:nth-child(6), .card:nth-child(6):before{
+    background: #4fa0ff;
+}
+
+/* Dash line */
+.card:nth-child(even) .card-body::before{
+    content: '';
+    position: absolute;
+    left: -12%;
+    top: 0;
+    width: 0px;
+    height: 100%;
+    border: 1px dashed #fff;
+    z-index: 1;
+}
+
+.card:nth-child(odd) .card-body::before{
+    content: '';
+    position: absolute;
+    right: -11%;
+    top: 0;
+    width: 0px;
+    height: 100%;
+    border: 1px dashed #fff;
+    z-index: 1;
+}
+
+.card-title{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 
 /* Situations professionnelles */
