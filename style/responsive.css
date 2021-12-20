@@ -3,7 +3,7 @@
     --dBlue: #2063f3;
     }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     header,
     header.sticky {
         padding: 0 50px ;
@@ -99,6 +99,27 @@
 
     .w50 {
         margin-bottom: 20px;
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+
+    .timeline .heading {
+        margin: 0 auto 15px;
+    }
+
+    .card{
+        width: 100%;
+        padding: 30px;
+        border-radius: 10px;
+        color: #fff;
+        display: block;
+        margin: 20px 0;
+        position: relative;
     }
 
     .situationsPro .content .situationsProBx {
