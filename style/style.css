@@ -3,7 +3,7 @@
 /* Variables globales */
 :root {
 --lBlue: #2094f3;
---dBlue: #2063f3;
+--dBlue: #1342a8;
 }
 
 /* Golbal */
@@ -120,12 +120,24 @@ header.sticky ul li a {
     color: #111;
 }
 
+header ul.menu li.active a::after,
+header ul.menu li.active a::before {
+    width: 100%;
+    background: var(--dBlue); 
+    color: var(--dBlue);
+} 
+
+header ul.menu li.active{
+    color:#111;
+}
+
 header ul li a:hover {
     color: var(--dBlue);
     transition: 0.5s;
 }
 
-header ul li a:after {
+header ul li a:after,
+header ul li a:before {
     content: '';
     display: block;
     height: 2px;
@@ -398,7 +410,7 @@ img {
 }
 
 /* Contact */
-.contact {
+.contactForm {
     background: #111;
 }
 
@@ -482,6 +494,14 @@ img {
     font-weight: 500;
     color: var(--lBlue);
     margin-bottom: 0;
+}
+
+.icon.adress {
+    align-items: center !important;
+}
+
+.icon img {
+    max-width: 20px;
 }
 
 /* Footer */

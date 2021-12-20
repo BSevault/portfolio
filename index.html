@@ -20,12 +20,13 @@
                 <span class="bar"></span>
             </div>
             <ul class="menu" >
-                <li><a href="#accueil" onclick="toggleMenu()">Accueil</a></li>
-                <li><a href="#profil" onclick="toggleMenu()">Profil</a></li>
-                <li><a href="#bts" onclick="toggleMenu()">BTS SIO</a></li>
-                <li><a href="#xpPro" onclick="toggleMenu()">Situations Professionnelles</a></li>
-                <li><a href="#veille" onclick="toggleMenu()">Veille Technologique</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li class="accueil active"><a href="#accueil" onclick="toggleMenu()">Accueil</a></li>
+                <li class="profil"><a href="#profil" onclick="toggleMenu()">Profil</a></li>
+                <li class="formationsXP"><a href="#formationsXP" onclick="toggleMenu()">Formations et Expériences</a></li>
+                <li class="bts"><a href="#bts" onclick="toggleMenu()">BTS SIO</a></li>
+                <li class="xpPro"><a href="#xpPro" onclick="toggleMenu()">Situations Professionnelles</a></li>
+                <li class="veille"><a href="#veille" onclick="toggleMenu()">Veille Technologique</a></li>
+                <li class="contact"><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </ul>
         </header>
 
@@ -77,7 +78,7 @@
         </section>
 
         <!-- Timeline -->
-        <section class="timelineContainer">
+        <section class="timelineContainer" id="formationsXP">
             <div class="timeline">
                 <div class="heading white">
                     <h2>Formations et Expériences</h2>
@@ -241,7 +242,7 @@
         </section>
 
         <!-- Contact -->
-        <section class="contact" id="contact" >
+        <section class="contactForm" id="contact" >
             <div class="heading white">
                 <h2>Contactez-moi</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -251,14 +252,14 @@
                     <h3>Contact Info</h3>
                     <div class="contactInfoBx">
                         <div class="box">
-                            <div class="icon">✉</div>
+                            <div class="icon"><p>✉</p></div>
                             <div class="text">
                                 <h3>Email</h3>
                                 <p>b.sevault@gmail.com</p>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="icon">&#x1F588</div>
+                            <div class="icon adress"><img src="./assets/icons/pin_white.svg" alt=""></div>
                             <div class="text">
                                 <h3>Paris</h3>
                             </div>
