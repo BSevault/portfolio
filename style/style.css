@@ -31,19 +31,19 @@ section {
     align-items: center;
 }
 
-.banner h2{
+.banner h1{
     font-size: 3em;
     color: #fff;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.5em;
 }
 
-.banner h2 span{
+.banner h1 span{
     font-size: 1.5em;
     font-weight: 700;
 }
 
-.banner h3 {
+.banner h2 {
     font-size: 1.5em;
     color: #fff;
     font-weight: 500;
