@@ -432,6 +432,12 @@ img {
     margin-top: 10px;
 }
 
+.formBx label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
 .formBx form input,
 .formBx form textarea {
     margin-bottom: 20px;
@@ -441,11 +447,11 @@ img {
     outline: none;
     background: #222;
     color: #fff;
+    width: 100%;
 }
 
 .formBx form textarea {
     min-height: 200px;
-    resize: none;
 }
 
 .formBx form input::placeholder,

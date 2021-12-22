@@ -268,13 +268,24 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- https://formsubmit.co -->
                 <div class="formBx">
-                    <form>
-                        <input type="text" name="nom" placeholder="Nom *" required>
-                        <input type="text" name="prenom" placeholder="Prénom *" required>
-                        <input type="text" name="entreprise" placeholder="Entreprise">
-                        <input type="email" name="email" placeholder="Email *" required>
-                        <textarea name="message" placeholder="Votre message *" required></textarea>
+                    <form action="https://formsubmit.co/b.sevault@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Nouveau mail depuis le portfolio">
+                        <input type="hidden" name="_template" value="table">
+                        <label for="prenom"><p>Votre prénom</p>
+                            <input type="text" name="prenom" id="prenom" placeholder="* Champ obligatoire" required>
+                        </label>
+                        <label for="nom"><p>Votre nom</p>
+                            <input type="text" name="nom" id="nom" placeholder="* Champ obligatoire" required>
+                        </label>
+                        <label for="email"><p>Votre adresse e-mail</p>
+                            <input type="email" name="email" id="email" placeholder="* Champ obligatoire" required>
+                        </label>
+                        <label for="message"><p>Votre message</p>
+                            <textarea name="message" id="message" placeholder="* Champ obligatoire" required></textarea>
+                        </label>
                         <input type="submit" value="Envoyer">
                     </form>
                 </div>
