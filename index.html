@@ -28,6 +28,7 @@
                 <li class="accueil active"><a href="#accueil" onclick="toggleMenu()">Accueil</a></li>
                 <li class="profil"><a href="#profil" onclick="toggleMenu()">Profil</a></li>
                 <li class="formationsXP"><a href="#formationsXP" onclick="toggleMenu()">Formations et Expériences</a></li>
+                <li class="skills"><a href="#skills" onclick="toggleMenu()">Compétences</a></li>
                 <li class="bts"><a href="#bts" onclick="toggleMenu()">BTS SIO</a></li>
                 <li class="xpPro"><a href="#xpPro" onclick="toggleMenu()">Situations Professionnelles</a></li>
                 <li class="veille"><a href="#veille" onclick="toggleMenu()">Veille Technologique</a></li>
@@ -122,6 +123,35 @@
             </div>
         </section>
 
+        <!-- Compétences -->
+        <section id="skills">
+            <div class="heading white">
+                <h2>Compétences</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="./assets/icons/html.png" class="skill-img" alt="">
+                    <h3 class="skill-level">HTML</h3>
+                    <p class="skill-info"></p>
+                </div>
+                <div class="skill-card">
+                    <img src="./assets/icons/css.png" class="skill-img" alt="">
+                    <h3 class="skill-level">CSS</h3>
+                    <p class="skill-info"></p>
+                </div>
+                <div class="skill-card">
+                    <img src="./assets/icons/js.png" class="skill-img" alt="">
+                    <h3 class="skill-level">JS</h3>
+                    <p class="skill-info"></p>
+                </div>
+                <div class="skill-card">
+                    <img src="./assets/icons/nodejs.png" class="skill-img" alt="">
+                    <h3 class="skill-level">Nodej.s</h3>
+                    <p class="skill-info"></p>
+                </div>                
+            </div>
+        </section>
+
         <!-- BTS SIO -->
         <section class="bts-sio" id="bts" >
             <div class="heading">
@@ -192,6 +222,8 @@
                         eveniet cum facilis pariatur. Praesentium.
                     </p>
                 </div>
+            </div>
+            <div class="content">
                 <div class="situationsProBx">
                     <img src="./assets/icons/icon4.png" alt="" />
                     <h2>Situation 4</h2>
@@ -229,21 +261,7 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="content">
-                <div class="veilleBx">
-                    <img src="./assets/img/product4.jpg" alt="" />
-                </div>
-                <div class="veilleBx">
-                    <img src="./assets/img/product4.jpg" alt="" />
-                </div>
-                <div class="veilleBx">
-                    <img src="./assets/img/product4.jpg" alt="" />
-                </div>
-                <div class="veilleBx">
-                    <img src="./assets/img/product4.jpg" alt="" />
-                </div>
-            </div>
-            <div class="heading">
-                <a href="#" class="btn">View More</a>
+                <iframe src="https://www.pearltrees.com/bsevault/veille-accessibilite/id49595899?embed=2&d=202112241753" style="border:0px;" allowtransparency="true"></iframe>
             </div>
         </section>
 
@@ -267,7 +285,8 @@
                         <div class="box">
                             <div class="icon adress"><img src="./assets/icons/pin_white.svg" alt=""></div>
                             <div class="text">
-                                <h3>Paris</h3>
+                                <h3>Adresse</h3>
+                                <p>Paris</p>
                             </div>
                         </div>
                     </div>
@@ -279,18 +298,18 @@
                         <input type="hidden" name="_subject" value="Nouveau mail depuis le portfolio">
                         <input type="hidden" name="_template" value="table">
                         <label for="prenom"><p>Votre prénom</p>
-                            <input type="text" name="prenom" id="prenom" placeholder="* Champ obligatoire" required>
+                            <input type="text" name="prenom" id="prenom" placeholder="* Champ requis" required>
                         </label>
                         <label for="nom"><p>Votre nom</p>
-                            <input type="text" name="nom" id="nom" placeholder="* Champ obligatoire" required>
+                            <input type="text" name="nom" id="nom" placeholder="* Champ requis" required>
                         </label>
                         <label for="email"><p>Votre adresse e-mail</p>
-                            <input type="email" name="email" id="email" placeholder="* Champ obligatoire" required>
+                            <input type="email" name="email" id="email" placeholder="* Champ requis" required>
                         </label>
                         <label for="message"><p>Votre message</p>
-                            <textarea name="message" id="message" placeholder="* Champ obligatoire" required></textarea>
+                            <textarea name="message" id="message" placeholder="* Champ requis" required></textarea>
                         </label>
-                        <input type="submit" value="Envoyer">
+                        <input class="btn" type="submit" value="Envoyer">
                     </form>
                 </div>
             </div>
