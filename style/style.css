@@ -57,7 +57,7 @@ section {
     position: relative;
     background: var(--lBlue);
     display: inline-block;
-    color: #000;
+    color: #fff;
     margin-top: 20px;
     padding: 10px 30px;
     font-size: 18px;
@@ -66,13 +66,10 @@ section {
     letter-spacing: 2px;
     font-weight: 700;
     border-radius: 6px;
-    transition: all 0.3s ease 0s;
 }
 
 .btn:hover {
-    transform: translateY(-10px);
-    border: 3px solid #fff;
-    transition: all 0.3s ease 0s;
+    border: 2px solid #fff;
 }
 
 /* Navbar */
@@ -81,7 +78,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 50px 20px 0 ;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -91,11 +88,18 @@ header {
 
 header.sticky {
     background: #fff;
-    padding: 0 100px;
+    padding: 0 50px 0 0;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
-header .logo {
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+}
+
+header .logo .name {
     color: #fff;
     font-size: 24px;
     text-transform: uppercase;
@@ -105,9 +109,23 @@ header .logo {
     opacity: 0;
 }
 
-header.sticky .logo {
+header.sticky .logo .name {
     color: #111;
     opacity: 1;
+}
+
+header .logo .socials a {
+    text-decoration: none;
+}
+
+header .logo .socials a svg {
+    width: 40px;
+    fill: #fff;
+    margin: 5px;
+}
+
+header.sticky .logo .socials a svg {
+    fill: #111;
 }
 
 header ul {
@@ -360,14 +378,15 @@ img {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        width: 100%;
     }
     
     .skill-card{
         position: relative;
         display: flex;
         margin: 30px 0;
-        /* width: 25%; */
-        width: 200px;
+        width: 25%;
+        max-width: 200px;
         justify-content: center;
     }
     
@@ -405,34 +424,34 @@ img {
         border: 6px solid;
     }
     
-    .skill-card:nth-child(5n+1) .skill-level{
-        background: #ff4f4f28;
-        border-color: #ff4f4f;
-        color: #ff4f4f;
+    .skill-card:nth-child(1) .skill-level{
+        background: #e34c2628;
+        border-color: #e34c26;
+        color: #e34c26;
     }
     
-    .skill-card:nth-child(5n+2) .skill-level{
-        background: #4fa0ff28;
-        border-color: #4fa0ff;
-        color: #4fa0ff;
+    .skill-card:nth-child(2) .skill-level{
+        background: #563d7c28;
+        border-color: #563d7c;
+        color: #563d7c;
     }
     
-    .skill-card:nth-child(5n+3) .skill-level{
-        background: #ffed4f28;
-        border-color: #ffed4f;
-        color: #ffed4f;
+    .skill-card:nth-child(3) .skill-level{
+        background: #f1e05a28;
+        border-color: #f1e05a;
+        color: #f1e05a;
     }
     
-    .skill-card:nth-child(5n+4) .skill-level{
-        background: #52ff4f28;
-        border-color: #52ff4f;
-        color: #52ff4f;
+    .skill-card:nth-child(4) .skill-level{
+        background: #84ba6428;
+        border-color: #84ba64;
+        color: #84ba64;
     }
     
-    .skill-card:nth-child(5n) .skill-level{
-        background: #4fdfff28;
-        border-color: #4fdfff;
-        color: #4fdfff;
+    .skill-card:nth-child(5) .skill-level{
+        background: #b0721928;
+        border-color: #b07219;
+        color: #b07219;
     }
 
 /* Situations professionnelles */
@@ -496,6 +515,7 @@ img {
 
 .formBx {
     min-width: 60%;
+    height: 670px;
 }
 
 .formBx form {
@@ -524,7 +544,6 @@ img {
     padding: 15px;
     font-size: 16px;
     border: none;
-    outline: none;
     background: #222;
     color: #fff;
     width: 100%;
@@ -545,7 +564,7 @@ img {
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #000;
+    color: #fff;
 }
 
 .contactInfoBx {

@@ -1,23 +1,28 @@
-:root {
-    --lBlue: #2094f3;
-    --dBlue: #2063f3;
-    }
-
 @media (max-width: 991px) {
     header,
     header.sticky {
-        padding: 0 50px ;
+        padding: 0 20px 0 0 ;
         z-index: 1000;
     }
 
     .logo {
-        font-size: 20px !important;
+        font-size: 16px !important;
         font-weight: 500 !important;
+        justify-content: flex-start;
+    }
+
+    header .logo .name {
+        font-size: 17px !important;
+        font-weight: 500 !important;
+    }
+
+    header .logo .socials {
+        display: flex;
     }
 
     .menu {
         position: fixed;
-        top: 39px;
+        top: 57px;
         left: -100%;
         display: block;
         padding: 20px 50px;
@@ -137,12 +142,13 @@
 @media (max-width: 600px){
     header,
     header.sticky {
-        padding: 0 20px ;
+        padding: 0 20px 0 0 ;
     }
 
     .logo {
         font-size: 16px !important;
         font-weight: 500 !important;
+        justify-content: flex-start;
     }
 
     .banner {
