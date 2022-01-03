@@ -20,9 +20,9 @@
         display: flex;
     }
 
-    .menu {
+    #menu {
         position: fixed;
-        top: 57px;
+        top: 55px;
         left: -100%;
         display: block;
         padding: 20px 50px;
@@ -35,7 +35,7 @@
         border-top: 1px solid rgba(0,0,0,0.2);
     }
 
-    .menu.active {
+    #menu.active {
         left: 0;
     }
 
@@ -49,21 +49,21 @@
         filter: invert(1);
     }
 
-    .hamburger {
+    #hamburger {
         display: block;
         cursor: pointer;
     }
     
-    .hamburger.active .bar:nth-child(2) {
+    #hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
     
-    .hamburger.active .bar:nth-child(1) {
+    #hamburger.active .bar:nth-child(1) {
         transform: translateY(10px) rotate(45deg);
         background-color: var(--dBlue);
     }
     
-    .hamburger.active .bar:nth-child(3) {
+    #hamburger.active .bar:nth-child(3) {
         transform: translateY(-10px) rotate(-45deg);
         background-color: var(--dBlue);
     }

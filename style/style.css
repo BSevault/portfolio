@@ -150,14 +150,14 @@ header.sticky ul li a {
     color: #111;
 }
 
-header ul.menu li.active a::after,
-header ul.menu li.active a::before {
+header ul#menu li.active a::after,
+header ul#menu li.active a::before {
     width: 100%;
     background: var(--dBlue); 
     color: var(--dBlue);
 } 
 
-header ul.menu li.active{
+header ul#menu li.active{
     color:#111;
 }
 
@@ -184,11 +184,11 @@ header ul li a:focus:after {
   color: var(--dBlue);
 }
 
-.hamburger {
+#hamburger {
     display: none;
 }
   
-.hamburger .bar:nth-child(2) {
+#hamburger .bar:nth-child(2) {
     background-color: var(--dBlue);
 }
   
@@ -206,7 +206,7 @@ header.sticky .bar:nth-child(2n+1) {
     background-color: #000;
 }
 
-header.sticky .hamburger.active .bar:nth-child(2n+1) {
+header.sticky #hamburger.active .bar:nth-child(2n+1) {
     background-color: var(--dBlue);
 }
   

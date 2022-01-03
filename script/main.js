@@ -1,20 +1,20 @@
 /** Changement d'aspect navbar quand on scroll depuis l'accueil */
 window.addEventListener("scroll", () => {
-    var header = document.querySelector("header");
+    var header = document.getElementById("header");
     header.classList.toggle("sticky", window.scrollY > 0);
 });
 
 /** Toggle du menu burger mobile */
 let toggleMenu = () => {
-    let menuToggle = document.querySelector(".hamburger");
-    let menu = document.querySelector(".menu");
+    let menuToggle = document.getElementById("hamburger");
+    let menu = document.getElementById("menu");
     menuToggle.classList.toggle("active");
     menu.classList.toggle("active");
 };
 
 /** Surbrillance navbar en fonction de la section à l'écran */
 const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll("header ul.menu li");
+const navLi = document.querySelectorAll("header ul#menu li");
 window.addEventListener("scroll", () => {
     let current = "";
     sections.forEach((section) => {

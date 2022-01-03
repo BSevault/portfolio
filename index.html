@@ -17,7 +17,7 @@
 
     <body>
         <!-- Navbar -->
-        <header>
+        <header id="header">
             <div class="logo" >
                 <div class="socials">
                     <a href="https://www.linkedin.com/in/benjamin-sevault/" target="blank">
@@ -35,21 +35,23 @@
                 <a href="#accueil" class="name">Benjamin Sevault</a>
             </div>
 
-            <div class="hamburger" tabindex="0" role="button" aria-roledescription="mobile menu open/close button" aria-label="open/close menu button" onclick="toggleMenu()">
+            <div id="hamburger" tabindex="0" role="button" aria-roledescription="mobile menu open/close button" aria-label="open/close menu button" onclick="toggleMenu()">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <ul class="menu" >
-                <li class="accueil active"><a href="#accueil" onclick="toggleMenu()">Accueil</a></li>
-                <li class="profil"><a href="#profil" onclick="toggleMenu()">Profil</a></li>
-                <li class="formationsXP"><a href="#formationsXP" onclick="toggleMenu()">Expériences</a></li>
-                <li class="skills"><a href="#skills" onclick="toggleMenu()">Compétences</a></li>
-                <li class="bts"><a href="#bts" onclick="toggleMenu()">BTS SIO</a></li>
-                <li class="xpPro"><a href="#xpPro" onclick="toggleMenu()">Réalisations</a></li>
-                <li class="veille"><a href="#veille" onclick="toggleMenu()">Veille</a></li>
-                <li class="contact"><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </ul>
+            <nav>
+                <ul id="menu" >
+                    <li class="accueil active"><a href="#accueil" onclick="toggleMenu()">Accueil</a></li>
+                    <li class="profil"><a href="#profil" onclick="toggleMenu()">Profil</a></li>
+                    <li class="formationsXP"><a href="#formationsXP" onclick="toggleMenu()">Expériences</a></li>
+                    <li class="skills"><a href="#skills" onclick="toggleMenu()">Compétences</a></li>
+                    <li class="bts"><a href="#bts" onclick="toggleMenu()">BTS SIO</a></li>
+                    <li class="xpPro"><a href="#xpPro" onclick="toggleMenu()">Réalisations</a></li>
+                    <li class="veille"><a href="#veille" onclick="toggleMenu()">Veille</a></li>
+                    <li class="contact"><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </nav>
         </header>
 
         <!-- Banner -->
