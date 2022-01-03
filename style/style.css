@@ -454,8 +454,8 @@ img {
         color: #b07219;
     }
 
-/* Situations professionnelles */
-.situationsPro {
+/* Réalisations */
+.work {
     background: #111;
 }
 
@@ -463,14 +463,14 @@ img {
     color: #fff;
 }
 
-.situationsPro .content {
+.work .content {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.situationsPro .content .situationsProBx {
+.work .content .workBx {
     padding: 40px 20px;
     background: #222;
     color: #fff;
@@ -480,16 +480,16 @@ img {
     transition: 0.5s;
 }
 
-.situationsPro .content .situationsProBx:hover {
+.work .content .workBx:hover {
     background: var(--lBlue);
 }
 
-.situationsPro .content .situationsProBx img {
+.work .content .workBx img {
     max-width: 80px;
     filter: invert(1);
 }
 
-.situationsPro .content .situationsProBx h2 {
+.work .content .workBx h2 {
     font-size: 20px;
     font-weight: 600;
 }
