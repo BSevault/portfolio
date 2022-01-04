@@ -1,0 +1,103 @@
+.work {
+    background: #111;
+}
+
+.heading.white {
+    color: #fff;
+}
+
+.work .content {
+   display: unset; 
+}
+
+.work .contentBx {
+    padding: 0 150px;
+}
+
+.work h3 {
+    color: #fff;
+    text-align: center;
+}
+
+.work .acc-btn, 
+.work .acc-content {
+    color: #fff;
+}
+
+.acc-btn {
+    width: 100%;
+    font-size: 20px;
+    padding: 25px 25px 25px 35px;
+    cursor: pointer;
+    background: inherit;
+    border: none;
+    outline: none;
+    text-align: left;
+    transition: all 0.5s linear;
+    border-bottom: 0px solid #fff;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.acc-btn:after {
+    content: "\27A4";
+    color: #fff;
+    float: right;
+    transition: all 0.3s linear;
+}
+
+.acc-btn.is-open:after {
+    transform: rotate(90deg);
+    color: var(--lBlue);
+}
+
+.acc-btn.is-open {
+    color: var(--lBlue);
+    border-bottom: 1px solid #fff;
+}
+
+.acc-content {
+    max-height: 0;
+    padding: 0 0 0 16px;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+    transition: max-height 0.3s ease-in-out;
+    
+}
+
+.acc-content p {
+    margin: 24px 0;
+    line-height: 1.7em;
+}
+
+
+
+/* .work .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.work .content .workBx {
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.work .content .workBx:hover {
+    background: var(--lBlue);
+}
+
+.work .content .workBx img {
+    max-width: 80px;
+    filter: invert(1);
+}
+
+.work .content .workBx h2 {
+    font-size: 20px;
+    font-weight: 600;
+} */

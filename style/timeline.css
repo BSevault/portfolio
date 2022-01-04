@@ -1,0 +1,118 @@
+.timelineContainer{
+    background: #111;
+}
+
+.timeline{
+    display: block;
+    width: 80%;
+    margin: 150px auto;
+}
+
+.timeline .heading{
+    margin-bottom: 150px;
+}
+
+.card{
+    width: 45%;
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    margin: -80px 0;
+    position: relative;
+}
+
+.card-title{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.card:nth-child(6n+2), .card:nth-child(6n+2):before{
+    background: #ff4f4f;
+}
+.card:nth-child(6n+3), .card:nth-child(6n+3):before{
+    background: #ffb84f;
+}
+.card:nth-child(6n+4), .card:nth-child(6n+4):before{
+    background: #3dca5c;
+}
+.card:nth-child(6n+5), .card:nth-child(6n+5):before{
+    background: #565252;
+}
+.card:nth-child(6n), .card:nth-child(6n):before{
+    background: #4fa0ff;
+}
+
+@media (min-width: 991px) {
+
+    .card:nth-child(even){
+        margin-left: auto;
+    }
+
+    /* Right side big dots */
+    .card:nth-child(even):before{
+        content: '';
+        position: absolute;
+        left: -14%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        border: 5px solid #111;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    /* Right side dash */
+    .card:nth-child(even):after{
+        content: '';
+        position: absolute;
+        left: -8.5%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 7%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+    }
+
+    /* Left side big dot */
+    .card:nth-child(odd):before{
+        content: '';
+        position: absolute;
+        right: -13%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        border: 5px solid #111;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    /* Left side dash */
+    .card:nth-child(odd):after{
+        content: '';
+        position: absolute;
+        right: -8.5%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 7%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+    }
+
+    /* Dash line */
+    .card:nth-child(even) .card-body::before{
+        content: '';
+        position: absolute;
+        left: -12%;
+        top: 0;
+        width: 0px;
+        height: 150%;
+        border: 1px dashed #fff;
+        z-index: 1;
+    }
+}

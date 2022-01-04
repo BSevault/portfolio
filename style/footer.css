@@ -1,0 +1,19 @@
+footer {
+    background: #111;
+    color: #fff;
+    /* text-align: center; */
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer div p {
+    opacity: 0.5;
+}

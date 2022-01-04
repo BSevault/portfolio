@@ -1,0 +1,136 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px 20px 0 ;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 0 50px 0 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+}
+
+header .logo .name {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: 0;
+}
+
+header.sticky .logo .name {
+    color: #111;
+    opacity: 1;
+}
+
+header .logo .socials a {
+    text-decoration: none;
+}
+
+header .logo .socials a svg {
+    width: 40px;
+    fill: #fff;
+    margin: 5px;
+}
+
+header.sticky .logo .socials a svg {
+    fill: #111;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style-type: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header.sticky ul li a {
+    color: #111;
+}
+
+header ul#menu li.active a::after,
+header ul#menu li.active a::before {
+    width: 100%;
+    background: var(--dBlue); 
+    color: var(--dBlue);
+} 
+
+header ul#menu li.active{
+    color:#111;
+}
+
+header ul li a:hover {
+    color: var(--dBlue);
+    transition: 0.5s;
+}
+
+header ul li a:after,
+header ul li a:before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0px;
+    margin: auto;
+    background: transparent;
+    transition: width .5s ease, background-color .4s ease;
+}
+
+header ul li a:hover:after,
+header ul li a:focus:after {
+  width: 100%;
+  background: var(--dBlue); 
+  color: var(--dBlue);
+}
+
+#hamburger {
+    display: none;
+}
+  
+#hamburger .bar:nth-child(2) {
+    background-color: var(--dBlue);
+}
+  
+.bar {
+    display: block;
+    width: 45px;
+    height: 5px;
+    margin: 6px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+header.sticky .bar:nth-child(2n+1) {
+    background-color: #000;
+}
+
+header.sticky #hamburger.active .bar:nth-child(2n+1) {
+    background-color: var(--dBlue);
+}

@@ -1,0 +1,100 @@
+.contactForm {
+    background: #111;
+}
+
+.formBx {
+    min-width: 60%;
+    height: 670px;
+}
+
+.formBx form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.formBx form h3,
+.contactInfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.formBx label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.formBx form input,
+.formBx form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    background: #222;
+    color: #fff;
+    width: 100%;
+}
+
+.formBx form textarea {
+    min-height: 200px;
+}
+
+.formBx form input::placeholder,
+.formBx form textarea::placeholder {
+    color: #999;
+}
+
+.formBx form input[type="submit"] {
+    max-width: 150px;
+    background: var(--lBlue);
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.contactInfoBx {
+    position: relative;
+}
+
+.contactInfoBx .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactInfoBx .box .icon {
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 30px;
+}
+
+.contactInfoBx .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactInfoBx .box .text h3 {
+    font-weight: 500;
+    color: var(--lBlue);
+    margin-bottom: 0;
+}
+
+.icon.adress {
+    align-items: center !important;
+}
+
+.icon img {
+    max-width: 20px;
+}
