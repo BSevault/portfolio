@@ -1,16 +1,7 @@
-/** Fixe la hauteur max de la section work */
-const workSection = document.getElementById("xpPro");
-let maxScrollHeight = workSection.scrollHeight;
-const workContent = workSection.children;
-for ( const element of workContent) { 
-    maxScrollHeight += element.scrollHeight;
-}
-workSection.style.height = maxScrollHeight+60 + "px";
-
- /** Changement d'aspect header quand on scroll depuis l'accueil */
+/** Changement d'aspect header quand on scroll depuis l'accueil */
 window.addEventListener("scroll", () => {
-    var header = document.getElementById("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
+   var header = document.getElementById("header");
+   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
 /** Toggle du menu burger mobile */
@@ -33,7 +24,7 @@ window.addEventListener("scroll", () => {
             current = section.getAttribute("id");
         }
     });
-
+    
     navLi.forEach( li => {
         li.classList.remove("active");
         if (li.classList.contains(current)) {
@@ -42,14 +33,23 @@ window.addEventListener("scroll", () => {
     });
 });
 
-/** Accordéon */
+/** Accordéon de la section réalisations*/
 const btns = document.querySelectorAll(".acc-btn");
 function accordion() {
-this.classList.toggle("is-open");
-const content = this.nextElementSibling;
-if (content.style.maxHeight) content.style.maxHeight = null;
-else content.style.maxHeight = content.scrollHeight + "px";
+    this.classList.toggle("is-open");
+    const content = this.nextElementSibling;
+    if (content.style.maxHeight) content.style.maxHeight = null;
+    else content.style.maxHeight = content.scrollHeight + "px";
 }
 
 // event
 btns.forEach((el) => el.addEventListener("click", accordion));
+
+/** Fixe la hauteur max de la section réalisations */
+const workSection = document.getElementById("xpPro");
+let maxScrollHeight = workSection.scrollHeight;
+const workContent = workSection.children;
+for ( const element of workContent) { 
+    maxScrollHeight += element.scrollHeight;
+}    
+workSection.style.height = maxScrollHeight+60 + "px";
