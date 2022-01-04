@@ -18,6 +18,17 @@
 .work h3 {
     color: #fff;
     text-align: center;
+    text-decoration-line: underline;
+}
+
+.work div.contentBx ~ div.contentBx {
+    margin-top: 80px;
+}
+
+.work h2 ~ p {
+    text-align: justify;
+    margin-top: 20px;
+    padding: 0 150px;
 }
 
 .work .acc-btn, 
@@ -28,6 +39,7 @@
 .acc-btn {
     width: 100%;
     font-size: 20px;
+    font-weight: 600;
     padding: 25px 25px 25px 35px;
     cursor: pointer;
     background: inherit;
@@ -39,7 +51,7 @@
     transition: border-bottom 0.3s ease-in-out;
 }
 
-.acc-btn:after {
+.acc-btn:before {
     content: "\27A4";
     color: #fff;
     margin: 0 20px;
@@ -47,7 +59,7 @@
     transition: all 0.3s linear;
 }
 
-.acc-btn.is-open:after {
+.acc-btn.is-open:before {
     transform: rotate(90deg);
     color: var(--lBlue);
 }

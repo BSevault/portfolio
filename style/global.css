@@ -46,8 +46,13 @@ section {
     margin-bottom: 10px;
 }
 
+.contentBx p ~ h3 {
+    margin-top: 30px;
+}
+
 .contentBx p {
     text-align: justify;
+    margin-bottom: 15px;
 }
 
 .w50 {

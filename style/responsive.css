@@ -131,6 +131,11 @@
         padding: 0;
     }
 
+    .work h2 ~ p {
+        padding: 0;
+        text-align: left;
+    }
+
     .work .acc-content {
         padding: 0 0 0 10px;
     }
@@ -183,6 +188,19 @@
     .veille .content iframe {
         width: 100%;
         height: 400px;
+    }
+
+    .work .acc-btn {
+        font-size: 17px;
+        padding: 0 0 20px 0;
+    }
+
+    .acc-btn:before {
+        margin: 0 10px 0 0;
+    }
+
+    .acc-content p {
+        font-size: 14px;
     }
 }
 

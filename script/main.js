@@ -46,10 +46,10 @@ function accordion() {
 btns.forEach((el) => el.addEventListener("click", accordion));
 
 /** Fixe la hauteur max de la section réalisations */
-const workSection = document.getElementById("xpPro");
-let maxScrollHeight = workSection.scrollHeight;
-const workContent = workSection.children;
-for ( const element of workContent) { 
-    maxScrollHeight += element.scrollHeight;
-}    
-workSection.style.height = maxScrollHeight+60 + "px";
+// const workSection = document.getElementById("xpPro");
+// let maxScrollHeight = workSection.scrollHeight;
+// const workContent = workSection.children;
+// for ( const element of workContent) { 
+//     maxScrollHeight += element.scrollHeight;
+// }    
+// workSection.style.height = maxScrollHeight+60 + "px";

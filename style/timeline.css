@@ -18,14 +18,15 @@
     border-radius: 10px;
     color: #fff;
     display: block;
-    margin: -80px 0;
+    margin: -53px 0;
     position: relative;
+    min-height: 220px;
 }
 
 .card-title{
     font-size: 30px;
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 
 .card:nth-child(6n+2), .card:nth-child(6n+2):before{
