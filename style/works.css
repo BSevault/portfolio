@@ -1,5 +1,6 @@
 .work {
     background: #111;
+
 }
 
 .heading.white {
@@ -11,7 +12,7 @@
 }
 
 .work .contentBx {
-    padding: 0 150px;
+    padding: 0 250px;
 }
 
 .work h3 {
@@ -41,7 +42,8 @@
 .acc-btn:after {
     content: "\27A4";
     color: #fff;
-    float: right;
+    margin: 0 20px;
+    float: left;
     transition: all 0.3s linear;
 }
 
@@ -57,7 +59,7 @@
 
 .acc-content {
     max-height: 0;
-    padding: 0 0 0 16px;
+    padding: 0 0 0 35px;
     overflow: hidden;
     border-bottom: 1px solid #fff;
     transition: max-height 0.3s ease-in-out;
@@ -66,7 +68,6 @@
 
 .acc-content p {
     margin: 24px 0;
-    line-height: 1.7em;
 }
 
 

@@ -27,9 +27,13 @@ section {
     color: #111;
 }
 
+.heading.white {
+    color: #fff;
+}
+
 .heading h2 {
-    font-weight: 600;
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 45px;
 }
 
 .content {

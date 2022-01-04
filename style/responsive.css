@@ -127,8 +127,12 @@
         position: relative;
     }
 
-    .situationsPro .content .situationsProBx {
-        margin: 10px;
+    .work .contentBx {
+        padding: 0;
+    }
+
+    .work .acc-content {
+        padding: 0 0 0 10px;
     }
 
     .veille .content iframe {
