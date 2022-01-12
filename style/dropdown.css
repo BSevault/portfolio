@@ -1,0 +1,63 @@
+.dropdown{
+    width: auto;
+}
+
+.dropdown span {
+    display: inline;
+    font-size: 14px;
+    color: #fff;
+    background: #111;
+    margin: 20px;
+    padding: 6px;
+    border: solid 2px #fff;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(119, 136, 153, 0.418);
+    padding: 12px 16px;
+    margin-top: 8px;
+  }
+
+  .dropdown-content a:hover {
+      color: var(--dBlue);
+      background: rgba(211, 211, 211, 0.466);
+      font-weight: 400;
+  }
+  
+  .dropdown.is-open .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-content a {
+      text-decoration: none;
+      color: #000;
+  }
+
+  .dropdown i.fa.fa-download::before {
+    content: "\f019";
+    margin-right: 5px;
+    margin-top: 6px;
+  }
+
+  .dropdown i.fa.fa-file-pdf-o::before {
+    content: "\f1c1";
+    margin-right: 5px;
+    margin-top: 6px;
+  }
+
+  .dropdown i.fa.fa-file-archive-o::before {
+    content: "\f1c6";
+    margin-right: 5px;
+    margin-top: 6px;
+  }
+
+  .dropdown i.fa.fa-file-code-o::before {
+    content: "\f1c9";
+    margin-right: 5px;
+    margin-top: 6px;
+  }

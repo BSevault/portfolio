@@ -36,6 +36,15 @@ section {
     font-size: 45px;
 }
 
+p {
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.contentBx {
+    padding: 0 250px;
+}
+
 .content {
     display: flex;
     justify-content: space-between;
@@ -50,10 +59,11 @@ section {
     margin-top: 30px;
 }
 
-.contentBx p {
+/* .contentBx p {
     text-align: justify;
     margin-bottom: 15px;
-}
+    font-size: 20px;
+} */
 
 .w50 {
     min-width: 50%;

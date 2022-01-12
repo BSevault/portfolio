@@ -45,6 +45,13 @@ function accordion() {
 // event
 btns.forEach((el) => el.addEventListener("click", accordion));
 
+/** Dropdown menu */
+const dropdown = document.querySelectorAll(".dropdown");
+function dropdownOpen() {
+    this.classList.toggle("is-open");
+}
+dropdown.forEach((el) => el.addEventListener("click", dropdownOpen));
+
 /** Fixe la hauteur max de la section réalisations */
 // const workSection = document.getElementById("xpPro");
 // let maxScrollHeight = workSection.scrollHeight;

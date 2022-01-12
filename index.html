@@ -16,10 +16,12 @@
         <link rel="stylesheet" href="./style/timeline.css">
         <link rel="stylesheet" href="./style/skills.css">
         <link rel="stylesheet" href="./style/works.css">
+        <link rel="stylesheet" href="./style/dropdown.css">
         <link rel="stylesheet" href="./style/watch.css">
         <link rel="stylesheet" href="./style/contact.css">
         <link rel="stylesheet" href="./style/footer.css">
         <link rel="stylesheet" href="./style/responsive.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <script defer src="./script/main.js"></script>
     </head>
@@ -241,7 +243,7 @@
         <section class="work" id="xpPro" >
             <div class="heading white">
                 <h2>Réalisations</h2>
-                <p>Au cours de ma préparation au BTS SIO option SLAM, j'ai réalisé plusieurs projets au cours de stages en entreprise, ou d'ateliers professionnels encadrés par l'équipe pédagogique de mon centre de formation. Ces réalisations en contexte professionnel ou pédagogique m'ont permi d'acquérir les blocs de compétences du réferentiel du BTS SIO.</p>
+                <p>Au cours de ma préparation au BTS SIO option SLAM, j'ai réalisé plusieurs projets au cours de stages en entreprise, ou d'ateliers professionnels encadrés par l'équipe pédagogique de mon centre de formation. Ces réalisations en contexte professionnel ou pédagogique m'ont permis d'acquérir les blocs de compétences du réferentiel du BTS SIO.</p>
             </div>
             <div class="content">
                 <div class="contentBx">
@@ -264,11 +266,22 @@
                 </div>
                 
                 <div class="contentBx">
-                    <h3>Ateliers professionnels</h3>
+                    <h3>Projets Personnels Encadrés</h3>
                     <button class="acc-btn">Contexte de prêt de matériel</button>
                     <div class="acc-content">
                         <p>
-    
+                            Ce projet s'inscrit dans le contexte suivant : <br><br> Votre centre de formation souhaite numériser les prêts du matériel informatique aux étudiants. Un début de réflexion est déjà en cours, et vous devez reprendre le projet. 
+                            <div class="dropdown">
+                                
+                                <span><i class="fa fa-download"></i>Documents</span>
+                                <div class="dropdown-content">
+                                    <a href=""><i class="fa fa-file-pdf-o"></i>Sujet</a>
+                                    <a href=""><i class="fa fa-file-pdf-o"></i>Rendu</a>
+                                    <a href=""><i class="fa fa-file-pdf-o"></i>Devis</a>
+                                    <a href=""><i class="fa fa-file-code-o"></i>Maquette formulaire</a>
+                                    <a href=""><i class="fa fa-file-archive-o"></i>Requêtes SQL</a>
+                                </div>
+                            </div>
                         </p>
                     </div>
                 </div>
@@ -358,10 +371,13 @@
         <section class="veille" id="veille" >
             <div class="heading">
                 <h2>Veille technologique</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="contentBx">
+                    <p>La veille technologique consiste à se tenir informé des évolutions techniques et des innovations dans un secteur d’activité donné. Cela comprend notamment la surveillance, la collecte, le partage et la diffusion d’information permettant d’anticiper ou d'avoir connaissance des changements en matière de recherche, développement, brevet, lancement de nouveaux produits, matériaux, processus, concepts, innovation de fabrication, etc….</p>
+                    <p>J'ai choisi d'axer ma veille sur le thème de l'accessibilité numérique. En effet, l'utilisation d'internet et des outils numériques sont aujourd'hui incontournables : achats, itinéraires, démarches administratives, etc... Cependant, même si la loi impose des règles d'accessibilité en ligne, encore beaucoup de produits et de services numériques sont inaccessibles aux personnnes en situation de handicap. Pourtant des solutions existent.</p>
+                </div>
             </div>
             <div class="content">
-                <iframe src="https://www.pearltrees.com/benjamin_sevault?embed=2&d=2022010396" style="border:0px;" allowtransparency="true"></iframe>
+                <iframe src="https://www.pearltrees.com/benjamin_sevault?embed=2&d=2022010396" style="border:0px;"></iframe>
             </div>
         </section>
 
@@ -369,7 +385,7 @@
         <section class="contactForm" id="contact" >
             <div class="heading white">
                 <h2>Contactez-moi</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>Si vous êtes à la recherche d'un développeur front-end, back-end, logiciel ou base de données, n'hésitez à me contacter. Je serai ravi de discuter avec vous.</p>
             </div>
             <div class="content">
                 <div class="contactInfo">
@@ -397,16 +413,16 @@
                     <form action="https://formsubmit.co/7c03e17d26e54a053ac1d06c679c24b0" method="POST">
                         <input type="hidden" name="_subject" value="Nouveau mail depuis le portfolio">
                         <input type="hidden" name="_template" value="table">
-                        <label for="prenom"><p>Votre prénom</p>
+                        <label for="prenom">Votre prénom
                             <input type="text" name="prenom" id="prenom" placeholder="* Champ requis" required>
                         </label>
-                        <label for="nom"><p>Votre nom</p>
+                        <label for="nom">Votre nom
                             <input type="text" name="nom" id="nom" placeholder="* Champ requis" required>
                         </label>
-                        <label for="email"><p>Votre adresse e-mail</p>
+                        <label for="email">Votre adresse e-mail
                             <input type="email" name="email" id="email" placeholder="* Champ requis" required>
                         </label>
-                        <label for="message"><p>Votre message</p>
+                        <label for="message">Votre message
                             <textarea name="message" id="message" placeholder="* Champ requis" required></textarea>
                         </label>
                         <input class="btn" type="submit" value="Envoyer">

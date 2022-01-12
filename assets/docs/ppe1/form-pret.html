@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'emprunt</title>
+    <style>div{margin: 0.5%;}</style>
+</head>
+<body>
+    <h1>Formulaire d'emprunt d'emprunt de matériel</h1>
+    <form class="rendered-form" action="http://cedric.cnam.fr/~pons/NFA016/echo.php" method="POST">
+        <fieldset class="etudiant">
+            <legend>Etudiant</legend>
+            <div class="formbuilder-text form-group field-name-box">
+                <label for="name-box" class="formbuilder-text-label">Nom</label>
+                <input type="text" placeholder="Nom" class="form-control" name="name-box" id="name-box" required>
+            </div>
+            <div class="formbuilder-text form-group field-firstname-box">
+                <label for="firstname-box" class="formbuilder-text-label">Prénom</label>
+                <input type="text" placeholder="Prénom" class="form-control" name="firstname-box" id="firstname-box" required>
+            </div>
+            <div class="formbuilder-date form-group field-ddn-box">
+                <label for="ddn-box" class="formbuilder-date-label">Date de naissance </label>
+                <input type="date" value="2020-01-01">
+            </div>
+            <div>
+                <label for="promo" class="formbuilder-text-label">Promotion</label>
+                <input type="text" placeholder="Année de promotion" class="form-control" name="promo" id="promo" required>
+            </div>
+            <div class="formbuilder-select form-group field-select-option">
+                <label for="select-option" class="formbuilder-select-label">Option</label>
+                <select class="form-control" name="select-option" id="select-option">
+                    <option value="SLAM" selected="selected" id="select-option-slam">SLAM</option>
+                    <option value="SISR" id="select-option-sisr">SISR</option>
+                </select>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Matériel emprunté</legend>
+            <div class="formbuilder-select form-group field-select-materiel">
+                <label for="nb-materiel" class="formbuilder-select-label">Nombre d'emprunt(s)</label>
+                <select class="form-control" name="select-nb-materiel" id="nb-materiel">
+                    <option value="1" >1</option>
+                    <option value="2" >2</option>
+                    <option value="3" >3</option>
+                    <option value="4" >4</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="select-materiel-0" class="formbuilder-select-label">Type de matériel</label>
+                <select class="form-control" name="select-materiel-0" id="select-materiel-0">
+                    <option value="laptop" selected="selected" id="select-materiel-0-0">Laptop</option>
+                    <option value="central_unit" id="select-materiel-0-1">Unité centrale</option>
+                    <option value="monitor" id="select-materiel-0-2">Moniteur</option>
+                    <option value="keyboard" id="select-materiel-0-3">Clavier</option>
+                    <option value="mouse" id="select-materiel-0-4">Souris</option>
+                </select>
+                <label for="serial0">Numéro de série</label>
+                <input type="text" placeholder="Numéro de série" name="serial0" id="serial0">
+            </div>
+            <div>
+                <label for="select-materiel-1" class="formbuilder-select-label">Type de matériel</label>
+                <select class="form-control" name="select-materiel-1" id="select-materiel-1" disabled required>
+                    <option value="laptop" selected="selected" id="select-materiel-1-0">Laptop</option>
+                    <option value="central_unit" id="select-materiel-1-1">Unité centrale</option>
+                    <option value="monitor" id="select-materiel-1-2">Moniteur</option>
+                    <option value="keyboard" id="select-materiel-1-3">Clavier</option>
+                    <option value="mouse" id="select-materiel-1-4">Souris</option>
+                </select>
+                <label for="serial1">Numéro de série</label>
+                <input type="text" placeholder="Numéro de série" name="serial1" id="serial1"disabled required>
+            </div>
+            <div>
+                <label for="select-materiel-2" class="formbuilder-select-label">Type de matériel</label>
+                <select class="form-control" name="select-materiel-2" id="select-materiel-2" disabled required>
+                    <option value="laptop" selected="selected" id="select-materiel-2-0">Laptop</option>
+                    <option value="central_unit" id="select-materiel-2-1">Unité centrale</option>
+                    <option value="monitor" id="select-materiel-2-2">Moniteur</option>
+                    <option value="keyboard" id="select-materiel-2-3">Clavier</option>
+                    <option value="mouse" id="select-materiel-2-4">Souris</option>
+                </select>
+                <label for="serial2">Numéro de série</label>
+                <input type="text" placeholder="Numéro de série" name="serial2" id="serial2" disabled required>
+            </div>
+            <div>
+                <label for="select-materiel-3" class="formbuilder-select-label">Type de matériel</label>
+                <select class="form-control" name="select-materiel-3" id="select-materiel-3" disabled required>
+                    <option value="laptop" selected="selected" id="select-materiel-3-0">Laptop</option>
+                    <option value="central_unit" id="select-materiel-3-1">Unité centrale</option>
+                    <option value="monitor" id="select-materiel-3-2">Moniteur</option>
+                    <option value="keyboard" id="select-materiel-3-3">Clavier</option>
+                    <option value="mouse" id="select-materiel-3-4">Souris</option>
+                </select>
+                <label for="serial3">Numéro de série</label>
+                <input type="text" placeholder="Numéro de série" name="serial3" id="serial3" disabled required>
+            </div>P
+            <br>
+            <div class="formbuilder-date form-group field-date-retour">
+                <label for="date-retour" class="formbuilder-date-label">Retour</label>
+                <input type="date" class="form-control" name="date-retour" id="date-retour" required>
+            </div>
+        </fieldset>
+        <br>
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+    <script>
+        document.getElementById('nb-materiel').addEventListener('change', function (){
+            let nbMat = document.getElementById('nb-materiel').value;
+            for(i=0;i<nbMat;i++){
+                document.getElementById('select-materiel-'+i).disabled = false;
+                document.getElementById('serial'+i).disabled = false;
+            }
+            for(i=nbMat;i<4;i++){
+                document.getElementById('select-materiel-'+i).disabled = true;
+                document.getElementById('serial'+i).disabled = true;
+            }
+        });
+    </script>
+</html>
