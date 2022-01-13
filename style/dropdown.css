@@ -23,7 +23,7 @@
   }
 
   .dropdown-content a:hover {
-      color: var(--dBlue);
+      text-decoration: underline;
       background: rgba(211, 211, 211, 0.466);
       font-weight: 400;
   }
