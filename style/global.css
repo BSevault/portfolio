@@ -41,8 +41,9 @@ p {
     margin-bottom: 15px;
     font-size: 20px;
 }
+
 .contentBx {
-    padding: 0 250px;
+    padding: 0 20%;
 }
 
 .content {
@@ -78,4 +79,9 @@ footer p {
 }
  .paws {
      width: 20px;
+ }
+
+ footer p {
+     font-size: 15px;
+     font-weight: 100;
  }

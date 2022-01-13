@@ -49,8 +49,20 @@ header .logo .socials a svg {
     margin: 5px;
 }
 
+header .logo .socials a:hover svg {
+    fill: #111;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
 header.sticky .logo .socials a svg {
     fill: #111;
+}
+
+header.sticky .logo .socials a:hover svg {
+    fill: #fff;
+    background-color: #111;
+    border-radius: 50%;
 }
 
 header ul {

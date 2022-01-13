@@ -46,17 +46,23 @@ function accordion() {
 btns.forEach((el) => el.addEventListener("click", accordion));
 
 /** Dropdown menu */
-const dropdown = document.querySelectorAll(".dropdown");
+const dropdown = document.getElementsByClassName("dropdown");
+const dropdownSpan = document.querySelectorAll(".dropdown span");
 function dropdownOpen() {
-    this.classList.toggle("is-open");
+    this.parentNode.classList.toggle("is-open");
 }
-dropdown.forEach((el) => el.addEventListener("click", dropdownOpen));
+dropdownSpan.forEach((el) => el.addEventListener("click", dropdownOpen));
 
-/** Fixe la hauteur max de la section réalisations */
-// const workSection = document.getElementById("xpPro");
-// let maxScrollHeight = workSection.scrollHeight;
-// const workContent = workSection.children;
-// for ( const element of workContent) { 
-//     maxScrollHeight += element.scrollHeight;
-// }    
-// workSection.style.height = maxScrollHeight+60 + "px";
+/** Fermeture du dropdown menu quand on clique en dehors */
+document.addEventListener('click', (e) => {
+    let targetElement = e.target;
+    console.log(!targetElement.matches('.dropdown-content'));
+    if (!(targetElement.matches('.dropdown-content') || targetElement.matches('.dropdown-btn') )){   
+        for (el of dropdown) {
+            if (el.classList.contains('is-open')) {
+                el.classList.remove('is-open');
+            }
+        }
+    }
+    
+});
