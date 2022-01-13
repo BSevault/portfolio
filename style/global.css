@@ -72,3 +72,10 @@ p {
 img {
     max-width: 100%;
 }
+
+footer p {
+    margin-bottom: 0;
+}
+ .paws {
+     width: 20px;
+ }
