@@ -74,6 +74,10 @@ img {
     max-width: 100%;
 }
 
+.about .dropdown{
+    margin-top: 80px;
+}
+
 footer p {
     margin-bottom: 0;
 }

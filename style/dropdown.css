@@ -7,13 +7,14 @@
   padding: 6px;
   border: solid 2px #fff;
   cursor: pointer;
-  /* width: auto; */
+  transition: all 0.4s ease;
 }
 
 .dropdown span:hover {
   color: #111;
   background: #fff;
   border: 2px solid #111;
+  transition: all 0.4s ease;
 }
 
 .dropdown-content {

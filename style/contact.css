@@ -2,6 +2,10 @@
     background: #111;
 }
 
+#contact .heading p {
+    text-align: center;
+}
+
 .formBx {
     min-width: 60%;
     height: 670px;
@@ -68,17 +72,17 @@
 
 .contactInfoBx .box .icon {
     min-width: 40px;
-    padding-top: 4px;
+    padding: 16px 5px 0 0;
     color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
     font-size: 30px;
 }
 
 .contactInfoBx .box .text {
     display: flex;
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 16px;
     color: #fff;
     flex-direction: column;
@@ -91,10 +95,12 @@
     margin-bottom: 0;
 }
 
-.icon.adress {
-    align-items: center !important;
+.fas.fa-map-marker-alt::before {
+    content: "\f3c5";
+    color: #fff;
 }
 
-.icon img {
-    max-width: 20px;
+.far.fa-envelope::before {
+    content: "\f0e0";
+    color: #fff;
 }
