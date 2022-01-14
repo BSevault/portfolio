@@ -16,7 +16,7 @@
     width: 45%;
     padding: 30px;
     border-radius: 10px;
-    color: #fff;
+    color: #000;
     display: block;
     margin: -53px 0;
     position: relative;
@@ -43,7 +43,7 @@
     background: #3dca5c;
 }
 .card:nth-child(6n+5), .card:nth-child(6n+5):before{
-    background: #565252;
+    background: #a79d9d;
 }
 .card:nth-child(6n), .card:nth-child(6n):before{
     background: #4fa0ff;

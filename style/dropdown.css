@@ -51,15 +51,15 @@
     content: "\f019";
   }
 
-  .dropdown i.fa.fa-file-pdf-o::before {
+  .dropdown i.far.fa-file-pdf-o::before {
     content: "\f1c1";
   }
 
-  .dropdown i.fa.fa-file-archive-o::before {
+  .dropdown i.far.fa-file-archive::before {
     content: "\f1c6";
   }
 
-  .dropdown i.fa.fa-file-code-o::before {
+  .dropdown i.far.fa-file-code::before {
     content: "\f1c9";
   }
 
