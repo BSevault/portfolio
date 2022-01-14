@@ -34,7 +34,7 @@ window.addEventListener("scroll", () => {
 });
 
 /** Accordéon de la section réalisations*/
-const btns = document.querySelectorAll(".acc-btn");
+const btns = [...document.getElementsByClassName("acc-btn")];
 function accordion() {
     this.classList.toggle("is-open");
     const content = this.nextElementSibling;
@@ -46,7 +46,6 @@ function accordion() {
 btns.forEach((el) => el.addEventListener("click", accordion));
 
 /** Dropdown menu */
-const dropdown = document.getElementsByClassName("dropdown");
 const dropdownSpan = document.querySelectorAll(".dropdown span");
 function dropdownOpen() {
     this.parentNode.classList.toggle("is-open");
@@ -54,9 +53,9 @@ function dropdownOpen() {
 dropdownSpan.forEach((el) => el.addEventListener("click", dropdownOpen));
 
 /** Fermeture du dropdown menu quand on clique en dehors */
+const dropdown = document.getElementsByClassName("dropdown");
 document.addEventListener('click', (e) => {
     let targetElement = e.target;
-    console.log(!targetElement.matches('.dropdown-content'));
     if (!(targetElement.matches('.dropdown-content') || targetElement.matches('.dropdown-btn') )){   
         for (el of dropdown) {
             if (el.classList.contains('is-open')) {
@@ -64,5 +63,4 @@ document.addEventListener('click', (e) => {
             }
         }
     }
-    
 });

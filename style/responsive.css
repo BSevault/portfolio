@@ -123,12 +123,21 @@
 
     .card{
         width: 100%;
-        padding: 30px;
+        padding: 10px;
         border-radius: 10px;
         color: #fff;
         display: block;
         margin: 20px 0;
         position: relative;
+    }
+
+    .card p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .skills-container {
+        padding: 0;
     }
 
     .work .contentBx {
@@ -176,14 +185,28 @@
         padding: 20px;
     }
 
-    .skills-container{
+    .skill-logo {
+        width: 2rem;
+        height: auto;
+    }
+
+    .skill-badge {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .skill-name {
+        font-size: 0.8em;
+    }
+
+    /* .skills-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
-    .skill-card {
+    /* .skill-card {
         width: 100%;
         margin: 30px 0;
     }
@@ -191,7 +214,7 @@
         position: absolute;
         top: 50px;
         right: 64px;
-    }
+    } */
 
     .veille .content iframe {
         width: 100%;
