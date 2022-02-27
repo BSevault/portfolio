@@ -160,6 +160,16 @@
     }
 }
 
+@media (max-width: 700px) {
+    .work .dropdown-wrapper {
+        flex-direction: column;
+    
+    }
+    .work .dropdown-wrapper .dropdown {
+        margin: 20px 0;
+    }
+}
+
 @media (max-width: 600px){
     header,
     header.sticky {
@@ -222,7 +232,7 @@
 
     .work .acc-btn {
         font-size: 17px;
-        padding: 0 0 20px 0;
+        padding: 20px 0;
     }
 
     .acc-btn:before {
@@ -231,6 +241,16 @@
 
     .acc-content p {
         font-size: 14px;
+    }
+
+    .missions-comp h4 {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 450px){
+    .missions-comp {
+        flex-direction: column;
     }
 }
 
