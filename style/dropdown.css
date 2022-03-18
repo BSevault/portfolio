@@ -23,6 +23,7 @@
     border: 1px solid #00000026;
     padding: 12px 16px;
     margin-top: 8px;
+    z-index: 1;
   }
 
   .dropdown-content a:hover {
