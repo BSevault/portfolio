@@ -9,6 +9,10 @@
   transition: all 0.4s ease;
 }
 
+.dropdown a, .dropdown a:visited {
+  text-decoration: none;
+}
+
 .dropdown span:hover {
   color: #111;
   background: #fff;
@@ -65,4 +69,8 @@
 
   .dropdown i.fa.fa-eye::before {
     content: "\f06e";
+  }
+  
+  .dropdown i.fa.fa-picture-o::before {
+    content: "\f03e";
   }

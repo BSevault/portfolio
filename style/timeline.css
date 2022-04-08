@@ -33,6 +33,9 @@
     margin-bottom: 14px;
 }
 
+.card:nth-child(6n+1), .card:nth-child(6n+1):before{
+    background: #4fa0ff;
+}
 .card:nth-child(6n+2), .card:nth-child(6n+2):before{
     background: #ff4f4f;
 }
@@ -46,7 +49,7 @@
     background: #a79d9d;
 }
 .card:nth-child(6n), .card:nth-child(6n):before{
-    background: #4fa0ff;
+    background: #ae68dae1;
 }
 
 @media (min-width: 991px) {
