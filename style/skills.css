@@ -42,6 +42,10 @@ section#skills {
     text-align: center;
 }
 
+.skills-container a{
+    text-decoration: none;
+}
+
 #skills h3.certif-header{
     margin-top: 60px;
     text-align: center;
