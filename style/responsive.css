@@ -112,9 +112,10 @@
 
     .timeline {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 80%;
         margin: auto;
+        gap: 0px;
     }
 
     .timeline .heading {

@@ -3,7 +3,9 @@
 }
 
 .timeline{
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
     width: 80%;
     margin: 150px auto;
 }
@@ -48,8 +50,12 @@
 .card:nth-child(6n+5), .card:nth-child(6n+5):before{
     background: #a79d9d;
 }
-.card:nth-child(6n), .card:nth-child(6n):before{
+.card:nth-child(6n){
     background: #ae68dae1;
+}
+
+.card:nth-child(6n):before {
+    background: #ae68da;
 }
 
 @media (min-width: 991px) {
