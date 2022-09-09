@@ -2,7 +2,7 @@
 
 Je n'ai aucun problème avec le fait que mon portfolio soit cloné.
 
-J'ai moi-même intégré des éléments produits par d'autres personnes et les ai personnalisés selon mes besoins.
+J'ai moi-même intégré des éléments produits par d'autres personnes et les ai personnalisé selon mes besoins.
 
 ## :rotating_light: **Attention**  :rotating_light:
 Le formulaire de contact envoie les messages vers **ma** boîte mail.
